@@ -1,38 +1,82 @@
-.App {
+/* General styling for the app */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  color: #333; /* Dark gray for the header */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3 {
+  font-size: 1.2rem;
+  margin: 5px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 90%; /* Increased width */
+  max-width: 400px; /* Increased max-width */
+  margin-right: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333; /* Dark gray for the buttons */
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #444; /* Slightly lighter dark gray for hover */
+}
+
+button:active {
+  background-color: #222; /* Even darker gray for active state */
+}
+
+button:focus {
+  outline: none;
+}
+
+.cross {
+  text-decoration: line-through;
+  color: #888; /* Slightly darker gray for completed tasks */
+}
+
+div {
+  background-color: #008C95; /* Arctic teal for the task containers */
+  padding: 15px; /* Increased padding */
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  width: 90%; /* Increased width */
+  max-width: 400px; /* Increased max-width */
 }
 
-.App-link {
-  color: #61dafb;
+div h3 {
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div button {
+  margin-top: 5px;
 }
